@@ -133,11 +133,18 @@
   </footer>
 <section>
   <h2>📨 How to Contact Me</h2>
-  <ol>
-    <li>Fill out the form with your name, email, and a short message.</li>
-    <li>Click "Send Message"</li>
-    <li>You'll see a thank you screen if it worked.</li>
-  </ol>
+  <form action="https://formspree.io/f/xnqeqkkw" method="POST">
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px;"><br /><br />
+
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="_replyto" required style="width: 100%; padding: 8px;"><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" required style="width: 100%; padding: 8px;" rows="5"></textarea><br /><br />
+
+    <button type="submit" style="background-color: #00ff9d; color: #000; padding: 10px 20px; border: none; border-radius: 4px;">Send Message</button>
+  </form>
 </section>
 </body>
 </html>
